@@ -8,13 +8,13 @@ using Sharprompt;
 var workingDirectory = Prompt.Input<string>("Enter working directory", defaultValue: "./").ToDirectoryInfo();
 var printerIp = Prompt.Input<string>("Enter printer IP address", defaultValue: "192.168.1.100");
 var quality = Prompt.Input<int>("Enter scan quality (0: lowest, x: highest)", defaultValue: 3);
-var shouldUpload = Prompt.Confirm("Upload to paperless?", defaultValue: true);
-Uploader.Config? paperlessConfig = null;
+var shouldUpload = Prompt.Confirm("Upload to FTP Server?", defaultValue: true);
+Uploader.Config? uploadConfig = null;
 if (shouldUpload){
-  var paperlessIp = Prompt.Input<string>("Enter paperless IP address", defaultValue: "192.168.1.200");
-  var paperlessUserName = Prompt.Input<string>("Enter paperless FTP user name", defaultValue: "ftpuser");
-  var paperlessPassword = Prompt.Password("Enter paperless FTP password");
-  paperlessConfig = new Uploader.Config(paperlessIp, new Credential(paperlessUserName, paperlessPassword));
+  var ftpServerIp = Prompt.Input<string>("Enter FTP Server IP address", defaultValue: "192.168.1.200");
+  var ftpServerUserName = Prompt.Input<string>("Enter FTP Server FTP user name", defaultValue: "ftpuser");
+  var ftpServerPassword = Prompt.Password("Enter FTP Server FTP password");
+  uploadConfig = new Uploader.Config(ftpServerIp, new Credential(ftpServerUserName, ftpServerPassword));
 }
 
 var scannerConfig = new Scanner.Config(printerIp, quality);
@@ -38,9 +38,9 @@ while (true)
     var mergedFile = documentWorkingDirectory.CombineFile($"{documentName}.pdf");
     PDFMerge.Merge(pages, mergedFile);
 
-    if (!shouldUpload || paperlessConfig == null) continue;
+    if (!shouldUpload || uploadConfig == null) continue;
 
-    await Uploader.UploadDocument(paperlessConfig, mergedFile);
+    await Uploader.UploadDocument(uploadConfig, mergedFile);
     //documentWorkingDirectory.Delete();
     Console.WriteLine($"document {documentName} uploaded successfully");
 }
