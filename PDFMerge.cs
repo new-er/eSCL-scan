@@ -2,7 +2,7 @@
 using PdfSharp.Pdf.IO;
 using File = Dotcore.FileSystem.File;
 
-namespace HpScan;
+namespace ESCLScan;
 
 public static class PDFMerge
 {

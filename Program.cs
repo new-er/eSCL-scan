@@ -1,8 +1,8 @@
 ﻿using Dotcore.FileSystem;
 using Dotcore.FileSystem.Directory;
-using HpScan;
-using HpScan.Scanner;
-using HpScan.Upload;
+using ESCLScan;
+using ESCLScan.Scanner;
+using ESCLScan.Upload;
 using Sharprompt;
 
 var workingDirectory = Prompt.Input<string>("Enter working directory", defaultValue: "./").ToDirectoryInfo();

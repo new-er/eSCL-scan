@@ -4,7 +4,7 @@ using Dotcore.FileSystem;
 using File = Dotcore.FileSystem.File;
 using Directory = Dotcore.FileSystem.Directory;
 
-namespace HpScan.Scanner;
+namespace ESCLScan.Scanner;
 
 public static class Scanner
 {

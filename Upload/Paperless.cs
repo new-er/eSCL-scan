@@ -1,6 +1,6 @@
 ﻿using FluentFTP;
 
-namespace HpScan.Upload;
+namespace ESCLScan.Upload;
 
 public static class Paperless
 {

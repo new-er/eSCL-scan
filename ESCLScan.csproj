@@ -5,10 +5,10 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>HpScan</RootNamespace>
+    <RootNamespace>ESCLScan</RootNamespace>
   </PropertyGroup>
 <PropertyGroup>
-		<PackageId>New.HpScan</PackageId>
+		<PackageId>New.ESCLScan</PackageId>
 		<Version>1.5.1</Version>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackAsTool>true</PackAsTool>

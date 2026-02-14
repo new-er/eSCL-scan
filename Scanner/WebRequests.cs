@@ -2,7 +2,7 @@
 using System.Text;
 using System.Xml;
 
-namespace HpScan.Scanner;
+namespace ESCLScan.Scanner;
 
 internal static class WebRequests
 {

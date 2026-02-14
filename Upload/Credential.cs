@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace HpScan.Upload;
+namespace ESCLScan.Upload;
 
 public record Credential(string UserName, string Password)
 {
