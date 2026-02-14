@@ -32,4 +32,6 @@ dotnet run
 
 Follow the interactive prompts to scan pages, merge into PDF, and optionally upload via FTP.
 
+## Contributing
 
+Contributions are welcome! Feel free to submit issues or pull requests for improvements, bug fixes, or new features.
