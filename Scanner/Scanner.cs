@@ -1,11 +1,10 @@
-﻿using File = Dotcore.FileSystem.File;
-using Directory = Dotcore.FileSystem.Directory;
+﻿using System.Net;
 using System.Xml;
 using Dotcore.FileSystem;
-using System.Net;
-using Dotcore.FileSystem.File;
+using File = Dotcore.FileSystem.File;
+using Directory = Dotcore.FileSystem.Directory;
 
-namespace HpAutoscan;
+namespace HpScan.Scanner;
 
 public static class Scanner
 {

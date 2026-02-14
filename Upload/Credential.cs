@@ -1,7 +1,6 @@
-﻿using System.Security;
-using System.Text;
+﻿using System.Text;
 
-namespace Paperless;
+namespace HpScan.Upload;
 
 public record Credential(string UserName, string Password)
 {

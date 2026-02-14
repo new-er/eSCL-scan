@@ -1,12 +1,12 @@
-﻿using File = Dotcore.FileSystem.File;
-using PdfSharp.Pdf;
+﻿using PdfSharp.Pdf;
 using PdfSharp.Pdf.IO;
+using File = Dotcore.FileSystem.File;
 
-namespace HpAutoscan.PDFs;
+namespace HpScan;
 
-public static class Merge
+public static class PDFMerge
 {
-    public static void Pdfs(IEnumerable<File.Info> pdfs, File.Info destination)
+    public static void Merge(IEnumerable<File.Info> pdfs, File.Info destination)
     {
         using var destinationDocument = new PdfDocument();
 
