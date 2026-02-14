@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+<PropertyGroup>
+		<PackageId>New.HpAutoscan</PackageId>
+		<Version>1.5.1</Version>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackAsTool>true</PackAsTool>
+		<PackageOutputPath>.\_nuget_packages</PackageOutputPath>
+	</PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentFTP" Version="52.0.0" />
+    <PackageReference Include="Newer.Dotcore.FileSystem" Version="1.0.10" />
+    <PackageReference Include="PDFsharp" Version="6.1.1" />
+    <PackageReference Include="Sharprompt" Version="3.0.0" />
+	  <PackageReference Include="System.Linq.Async" Version="6.0.1" />
+  </ItemGroup>
+
+</Project>

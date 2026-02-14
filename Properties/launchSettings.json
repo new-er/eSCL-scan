@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "HpAutoscan": {
+      "commandName": "Project",
+      "commandLineArgs": ""
+    }
+  }
+}
