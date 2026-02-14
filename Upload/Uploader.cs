@@ -2,7 +2,7 @@
 
 namespace ESCLScan.Upload;
 
-public static class Paperless
+public static class Uploader
 {
     public record Config(string Ip, Credential Credential);
 
@@ -23,10 +23,7 @@ public static class Paperless
         }
         else
         {
-            // add logic to test if certificate is valid here
-            // lookup the "Certificate" and "Chain" properties
-            if (e.Certificate.Subject == "CN=localhost") e.Accept = true;
-            else e.Accept = false;
+            e.Accept = e.Certificate.Subject == "CN=localhost";
         }
     }
 
