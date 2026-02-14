@@ -1,4 +1,4 @@
-# ESCLScan
+# eSCL-Scan
 
 **Simple console tool to scan multi-page documents from HP/printer with eSCL support, merge pages into one PDF, and (optionally) upload via FTP.**
 
