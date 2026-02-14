@@ -18,7 +18,7 @@ Current status: **minimal viable tool** – interactive prompt, no command-line 
 
 - .NET 10
 - (HP)-Scanner that supports **eSCL** (tested on HP DeskJet 2630)
-- Network connection to the printer
+- Network connection to the scanner
 - (optional) FTP server for upload
 
 ## Usage
